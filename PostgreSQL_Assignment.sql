@@ -103,6 +103,9 @@ JOIN rangers ON sightings.ranger_id = rangers.ranger_id
 ORDER BY sightings.sighting_time DESC
 LIMIT 2;
 
+
+
+
 -- *** problem 7 ***
 
 
@@ -141,5 +144,7 @@ DELETE FROM rangers
 WHERE ranger_id NOT IN (
     SELECT DISTINCT ranger_id FROM sightings
 );
+
+select * from rangers;
 
 
